@@ -8,10 +8,7 @@ The estimates come from the merging of inertial, visual and kinematics odometrie
 
 ## Code Example
 
-The software is divided in three packages:
--	``` snake_in_pipes``` (MATLAB)
--	``` visual_odometry ``` (C++)
--	``` odometry_and_mapping ``` (MATLAB)
+The software is divided in three packages: ``` snake_in_pipes``` (MATLAB), ``` visual_odometry ``` (C++) and 	``` odometry_and_mapping ``` (MATLAB)
 
 The proper use of them is in the following order:
 
@@ -39,7 +36,6 @@ Furthermore, it may be used to retrieve the map of an unknown pipe network.
 ## Installation
 
 The MATLAB code requires a version greater or equal than 2014a and Symbolic Toolbox.
-
 The C++ code requires OpenCV 3.1 API.
 
 ## API Reference
@@ -54,12 +50,13 @@ visual_odometry/src/visual_odometry.cpp
 ```
 to perform visual odometry on a sample video recorded on the snake.
 
+
 Just run
 ```
 odometry_and_mapping/odometry_and_mapping_in_pipes_main.m
 ```
 to perform the full inertial+visual+kinematic estimation on a sample experiment log.  
-It can also be tested on other provided sample logs, which are stored in ``` odometry_and_mapping/sample_data/ ```
+The full estimation can be tested also on other provided sample logs, which are stored in ``` odometry_and_mapping/sample_data/ ```
 
 ## Contributors
 
