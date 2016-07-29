@@ -13,20 +13,22 @@ The software is divided in three packages:
 -	``` visual_odometry ``` (C++)
 -	``` odometry_and_mapping ``` (MATLAB)
 
-They are to be used in the given order. In details.
+The proper use of them is in the following order:
 
-1. Run an experiment, i.e. make the snake crawl inside a pipe while recording a video from the frontal monocular camera:
-```
-snake_in_pipes/snake_in_pipes_main.m
-```
-2. Estimate the robot motion from the video:
-```
-visual_odometry/src/visual_odometry.cpp
-```
-3. Feed the experiment log and the visual-odometry estimate to the inertial+kinematic estimators and run an EKF to merge all estimates:
-```
-odometry_and_mapping/odometry_and_mapping_in_pipes_main.m
-```
+1. Run an experiment, i.e. make the snake crawl inside a pipe while recording a video from the frontal monocular camera by running
+  ```
+  snake_in_pipes/snake_in_pipes_main.m
+  ```  
+  
+2. Estimate the robot motion from the video by running
+  ```
+  visual_odometry/src/visual_odometry.cpp
+  ```  
+  
+3. Feed the experiment log and the visual-odometry estimate to the inertial+kinematic estimators and run an EKF to merge all estimates by running
+  ```
+  odometry_and_mapping/odometry_and_mapping_in_pipes_main.m
+  ```
 
 ## Motivation
 
