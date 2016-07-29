@@ -1,4 +1,4 @@
-# Odometry_and_mapping_inside_pipes
+# Odometry and mapping inside pipes
 
 ## Synopsis
 
