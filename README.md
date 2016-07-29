@@ -9,9 +9,9 @@ The estimates come from the merging of inertial, visual and kinematics odometrie
 ## Code Example
 
 The software is divided in three packages:
-•	_snake_in_pipes_ (MATLAB)
-•	_visual_odometry_(C++)
-•	_odometry_and_mapping_ (MATLAB)
+-	``` snake_in_pipes``` (MATLAB)
+-	``` visual_odometry ``` (C++)
+-	``` odometry_and_mapping ``` (MATLAB)
 
 They are to be used in the given order. In details.
 
@@ -19,12 +19,10 @@ They are to be used in the given order. In details.
 ```
 snake_in_pipes/snake_in_pipes_main.m
 ```
-
 2. Estimate the robot motion from the video:
 ```
 visual_odometry/src/visual_odometry.cpp
 ```
-
 3. Feed the experiment log and the visual-odometry estimate to the inertial+kinematic estimators and run an EKF to merge all estimates:
 ```
 odometry_and_mapping/odometry_and_mapping_in_pipes_main.m
@@ -40,7 +38,7 @@ Furthermore, it may be used to retrieve the map of an unknown pipe network.
 
 The MATLAB code requires a version greater or equal than 2014a and Symbolic Toolbox.
 
-The C++ code requires OpenCV 3.1 API for C++.
+The C++ code requires OpenCV 3.1 API.
 
 ## API Reference
 
@@ -51,14 +49,15 @@ See DOCUMENTATION.odt for details on usage, as well as learned lessons and advic
 Just run
 ```
 visual_odometry/src/visual_odometry.cpp
+```
+to perform visual odometry on a sample video recorded on the snake.
+
+Just run
+```
 odometry_and_mapping/odometry_and_mapping_in_pipes_main.m
 ```
-to perform the estimation on a sample experiment log and video.
-
-The EKF (odometry_and_mapping_in_pipes_main.m) can be tested on different sample logs, which are stored in 
-```
-odometry_and_mapping/sample_data/
-```
+to perform the full inertial+visual+kinematic estimation on a sample experiment log.  
+It can also be tested on other provided sample logs, which are stored in ``` odometry_and_mapping/sample_data/ ```
 
 ## Contributors
 
