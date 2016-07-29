@@ -40,7 +40,7 @@ The C++ code requires OpenCV 3.1 API.
 
 ## API Reference
 
-See DOCUMENTATION.odt for details on usage, as well as learned lessons and advices on future work directions.
+See DOCUMENTATION.pdf for details on usage, as well as learned lessons and advices on future work directions.
 
 ## Tests
 
